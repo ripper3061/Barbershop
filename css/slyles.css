@@ -211,11 +211,12 @@ body{
     color: var(--primary-title-color);
 }
 
-/* footer  */
-.footer .title{
+/* forma  */
+.forma .title{
     color: var(--white-color);
 }
 
+/* contacts */
 .address{
     color: var(--sec-title-color);
     font-style: normal;
@@ -226,21 +227,21 @@ body{
     text-decoration: none;
 }
 
-.footer .sub-title{
+.contacts .sub-title{
     color: var(--white-color);
 }
 
-.footer .text{
+.contacts .text{
     color: var(--sec-title-color);
 }
 
-.copyright .sub-title{
+.footer .sub-title{
     color: var(--sec-title-color);
     letter-spacing: 0.2em;
     text-transform: none;
 }
 
-.copyright .link{
+.footer .link{
     color: var(--primary-title-color);
     font-weight: 600;
     font-size: 11px;
