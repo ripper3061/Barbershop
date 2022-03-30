@@ -1,0 +1,63 @@
+/* палитра
+
+основной цвет текста #555555
+дополнительный цвет текста #303030
+дополнительный цвет теста #FFFFFF
+дополнительный цвет теста #FF6C00
+дополнительный цвет теста #9DA4BD
+дополнительный цвет теста rgba(157, 164, 189, 0.6);
+
+цвет фона #F7F7F7 */
+
+:root{
+    --primary-text-color: #555555;
+    --primary-title-color: #303030;
+    --sec-title-color: #9DA4BD;
+    --white-color: #FFFFFF;
+    --accent-color: #FF6C00;
+    --transparent-sec-title-color:rgba(157, 164, 189, 0.6);
+}
+
+body{
+    color: var(--primary-text-color);
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 0.02em;
+}
+
+/* убирает точки в списках */
+.list {
+    list-style: none;
+}
+
+/* header */
+
+/* ссылки навигации */
+.nav-list .link,
+.nav-phone{
+    color: var(--white-color);
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.1em;
+    text-decoration: none;
+}
+
+.nav-list .link:hover,
+.nav-list .link:focus,
+.nav-phone:hover,
+.nav-phone:focus{
+    color: var(--accent-color);
+}
+
+/* номер телефона */
+/* .nav-phone{
+    color: var(--white-color);
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.1em;
+    text-decoration: none; 
+} */
