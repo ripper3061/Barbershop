@@ -28,6 +28,20 @@ body{
     letter-spacing: 0.02em;
 }
 
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+/* сброс стилей */
+h1,h2,h3,p,ul{
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+
+
 /* убирает точки в списках */
 .list {
     list-style: none;
@@ -53,6 +67,40 @@ body{
 }
 
 /* header */
+.main-nav{
+    background-color: beige;
+    display: flex;
+    align-items: center;
+}
+.logo{
+    margin-left: 8px;
+    
+}
+.nav-list{
+    display: flex;
+    margin-left: 70px;
+}
+
+.nav-list .link{
+    display: block;
+    padding-top: 54px;
+    padding-bottom: 54px;
+}
+.nav-list .item+.item{
+    margin-left: 40px;
+}
+
+.nav-phone{
+    margin-left: auto;
+
+    display: block;
+    padding-top: 54px;
+    padding-bottom: 54px;
+}
+
+.main-nav .button{
+    margin-left: 40px;
+}
 .nav-list .link,
 .nav-phone{
     color: var(--white-color);
@@ -73,6 +121,7 @@ body{
 /* кнопка в хедере */
 .button{
     color: var(--white-color);
+    font-family: 'Open Sans';
     font-weight: 600;
     font-size: 12px;
     line-height: 1.33;
@@ -95,6 +144,13 @@ body{
 }
 
 /* Блок Герой */
+.hero{
+    display: flex;
+}
+
+.hero-text{
+    margin-left: 106px;
+}
 .hero .link{
     color: var(--primary-title-color);
     font-weight: 600;
@@ -110,6 +166,8 @@ body{
 
 .hero .sub-title{
     color: var(--transparent-sec-title-color);
+
+    margin-bottom: 20px;
 }
 
 .hero-title{
@@ -119,6 +177,8 @@ body{
     font-size: 72px;
     line-height: 1.18;
     letter-spacing: 0.05em;
+
+    margin-bottom: 20px;
 }
 
 .hero .text{
@@ -126,16 +186,39 @@ body{
 }
 
 /* Блок "О нас" */
+.about{
+    display: flex;
+    padding-top: 139px;
+    padding-bottom: 121px;
+}
+
+.about .list{
+    display: flex;
+}
+.about .list .item+.item{
+    margin-left: 30px;
+}
+
+.about-text{
+    margin-left: 64px;
+}
 .about .sub-title{
     color: #303030;
+
+    margin-bottom: 20px;
 }
 
 .about .title{
     color: var(--primary-title-color);
+
+    margin-bottom: 20px;
 }
+
 .about .text{
     font-size: 14px;
     line-height: 1.86;
+
+    margin-bottom: 40px;
 }
 
 .about .button{
@@ -148,15 +231,46 @@ body{
 }
 
 /* Блок Услуги и цены */
+.prices{
+    padding-top: 130px;
+    padding-bottom: 130px;
+}
 .prices .sub-title{
     color: var(--transparent-sec-title-color);
+
+    margin-bottom: 20px;
 }
 .prices .title{
     color: var(--white-color);
+
+    margin-bottom: 44px;
 }
 
+.prices-lists{
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 50px;
+}
+.price-list{
+    width: 585px;
+    padding: 30px 40px;
+}
+.price-list .item{
+    display: flex;
+    justify-content: space-between;
+}
+
+.price-list .item+.item{
+    margin-top: 20px;
+}
 .prices .list p{
     color: var(--sec-title-color);
+}
+
+.prices .button{
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Блок преимущества-excellence */

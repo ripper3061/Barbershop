@@ -10,45 +10,54 @@
     <link rel="stylesheet" href="./css/slyles.css">
 </head>
 <body>
-    <header>
-        <a href=""><img src="./images/Logo.svg" alt="логотип" /></a>
+    <header class="header">
+      <div class="container main-nav">
+        <a href="" class="logo"><img src="./images/Logo.svg" alt="логотип" /></a>
         <nav>
             <ul class="nav-list list">
-                <li><a href="#about" class="link">О нас</a></li>
-                <li><a href="#prices" class="link">Услуги и цены</a></li>
-                <li><a href="#masters" class="link">Мастера</a></li>
-                <li><a href="#contacts" class="link">Контакты</a></li>
+                <li class="item"><a href="#about" class="link">О нас</a></li>
+                <li class="item"><a href="#prices" class="link">Услуги и цены</a></li>
+                <li class="item"><a href="#masters" class="link">Мастера</a></li>
+                <li class="item"><a href="#contacts" class="link">Контакты</a></li>
             </ul>
         </nav>
         <a href="tel:+380441111111" class="nav-phone">+38 044 111 11 11</a>
         <button type="button" class="button">онлайн-запись</button>
+      </div>
     </header>
 
     <main>
-        <section class="hero">
+        <section class="container hero">
+          <div class="social">
             <ul class="list">
-                <li>
-                    <a href="" target="_blank" rel="noopener noreferrer nofollow" class="link"
-                    >Instagram</a>
-                </li>
-                <li>
+                <li class="item">
                     <a href="" target="_blank" rel="noopener noreferrer nofollow" class="link"
                     >Youtube</a>
                 </li>
+                <li class="item">
+                    <a href="" target="_blank" rel="noopener noreferrer nofollow" class="link"
+                    >Instagram</a>
+                </li>
             </ul>
+          </div>
+          <div class="hero-text">
             <p lang="en" class="sub-title">A hair salon for men in Kyiv</p>
             <h1 lang="en" class="hero-title">BarberShop</h1>
             <p class="text">
             Мы эксперты в модных мужских стрижках.<br>Работаем быстро, осторожно и со
             вкусом.
             </p>
+          </div>
         </section>
 
         <section class="container about">
+          <div>
             <ul class="list">
-                <li><img src="./images/about1.jpg" width="270px" alt="стрижка бороды" /></li>
-                <li><img src="./images/about2.jpg" width="270px" alt="стрижка головы" /></li>
+                <li class="item"><img src="./images/about1.jpg" width="270px" alt="стрижка бороды" /></li>
+                <li class="item"><img src="./images/about2.jpg" width="270px" alt="стрижка головы" /></li>
             </ul>
+          </div>
+          <div class="about-text">
                 <p class="sub-title">О нас</p>
                 <h2 id="about" class="title">Лучший Барбершоп
                  твоего города</h2>
@@ -56,48 +65,55 @@
                 <p class="text">Мы команда, которая никогда не останавливается на достигнутом 
                 и жаждет перемен. И когда ты попадешь в руки нашего мастера, 
                 то уже никогда не сможешь быть прежним. Мы команда, которая всегда с клиентами "на одной волне". Поэтому, мы всегда готовы усовершенствовать каждого, кто к нам приходит!</p>
-                <button type="button" class="button">онлайн-запись</button>   
+                <button type="button" class="button">онлайн-запись</button>
+          </div>   
         </section>
 
         <section class="container prices">
             <p class="sub-title">Проведи время в компании лучших мастеров</p>
             <h2 id="prices" class="title">Услуги и цены</h2>
+          <div class="prices-lists">
+           <div class="price-list">
             <ul class="list">
-                <li>
+                <li class="item">
                   <p>Мужская стрижка</p>
                   <p>от 300 грн.</p>
                 </li>
-                <li>
+                <li class="item">
                   <p>Мужская стрижка</p>
                   <p>от 200 грн.</p>
                 </li>
-                <li>
+                <li class="item">
                   <p>Стрижка усов</p>
                   <p>от 200 грн.</p>
                 </li>
-                <li>
+                <li class="item">
                   <p>Бритье опасной бритвой</p>
                   <p>от 200 грн.</p>
                 </li>
             </ul>
+          </div> 
+          <div class="price-list">
             <ul class="list">
-                <li>
-                  <p>Cтрижка у стажера</p>
-                  <p>от 50 грн.</p>
+                <li class="item">
+                  <p class="text-item">Cтрижка у стажера</p>
+                  <p class="text-item">от 50 грн.</p>
                 </li>
-                <li>
-                  <p>Стрижка под насадку</p>
-                  <p>от 200 грн.</p>
+                <li class="item">
+                  <p class="text-item">Стрижка под насадку</p>
+                  <p class="text-item">от 200 грн.</p>
                 </li>
-                <li>
-                  <p>Детская стрижка (до 12 лет)</p>
-                  <p>от 300 грн.</p>
+                <li class="item">
+                  <p class="text-item">Детская стрижка (до 12 лет)</p>
+                  <p class="text-item">от 300 грн.</p>
                 </li>
-                <li>
-                  <p>Камуфлирование седины</p>
-                  <p>от 200 грн.</p>
+                <li class="item">
+                  <p class="text-item">Камуфлирование седины</p>
+                  <p class="text-item">от 200 грн.</p>
                 </li>
             </ul>
+          </div>
+        </div>
           <button type="button" class="button">онлайн-запись</button>
         </section>
 
@@ -176,12 +192,12 @@
             </ul>
         </section>
 
-        <section class="forma">
+        <section class="container forma">
           <p class="title">Онлайн-запись</p>
           <button type="button" class="button">отправить</button>
         </section>
 
-        <section class="contacts">
+        <section class="container contacts">
           <p class="title">Контакты</p>
           <address class="address">ул. Васильковая, 7А <br>
             Киев, 08132 <br>
@@ -193,7 +209,7 @@
          </section>
     </main>
 
-    <footer class="footer">
+    <footer class="container footer">
         <p class="sub-title">&copy Copyright 2020</p>
         <ul class="list">
           <li>
