@@ -66,7 +66,7 @@ img {
 
 /* общий стиль заголовков h2 */
 .title {
-  font-family: 'Raleway' . sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 42px;
   line-height: 1.17;
@@ -330,7 +330,12 @@ img {
   text-align: center;
   padding: 20px 24px;
 
-  background-color: ##f7f7f7;
+  background-color: #f7f7f7;
+}
+
+.excellence-list .item + .item {
+  margin-left: 30px;
+  margin-bottom: 30px;
 }
 .excellence .number {
   counter-reset: var(--primary-title-color);
