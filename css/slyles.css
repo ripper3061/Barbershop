@@ -157,15 +157,15 @@ img {
 /* Блок Герой */
 .hero-body {
   display: flex;
-  background-image: url('../images/hero.jpg');
-  background-position: center;
-  background-size: cover;
 }
 
 .hero .list {
   display: flex;
 }
 
+.hero .social {
+  width: 93px;
+}
 .hero .social .item + .item {
   margin-left: 40px;
 }
