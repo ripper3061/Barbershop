@@ -172,6 +172,16 @@ img {
 
 .hero-text {
   padding: 272px 0 206px 96px;
+
+  background-image: radial-gradient(
+      rgba(25, 28, 38, 0.2),
+      rgba(25, 28, 38, 0.2)
+    ),
+    url('../images/hero.jpg');
+  background-position: center;
+  background-size: cover;
+
+  flex-grow: 1;
 }
 
 .hero .link {
