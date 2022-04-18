@@ -75,16 +75,18 @@ img {
 }
 
 /* header */
-.main-nav {
+.header .container {
   background-color: #555555;
   display: flex;
   align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
 }
+
 .logo {
   margin-left: 8px;
 }
+
 .nav-list {
   display: flex;
   margin-left: 70px;
@@ -96,6 +98,7 @@ img {
   padding-top: 32px;
   padding-bottom: 32px;
 }
+
 .nav-list .item + .item {
   margin-left: 40px;
 }
@@ -108,7 +111,7 @@ img {
   display: block;
 }
 
-.main-nav .button {
+.header .button {
   margin-left: 40px;
 }
 
@@ -155,7 +158,7 @@ img {
 }
 
 /* Блок Герой */
-.hero-body {
+.hero .container {
   display: flex;
 }
 
@@ -164,7 +167,7 @@ img {
 }
 
 .hero .social {
-  width: 93px;
+  width: 98px;
 }
 .hero .social .item + .item {
   margin-left: 40px;
@@ -268,17 +271,18 @@ img {
 }
 
 /* Блок Услуги и цены */
-.prices {
-  background-image: linear-gradient(
-      rgba(17, 19, 25, 0.8),
-      rgba(17, 19, 25, 0.8)
-    ),
-    url('../images/bcg-prices.jpg');
+.prices .container {
+  border-color: #090b13;
+  background-image: url('../images/prices-bg.png'),
+    linear-gradient(#111319, #111319);
   background-position: center;
   background-size: cover;
   padding-top: 130px;
   padding-bottom: 130px;
+
+  max-width: 1280px;
 }
+
 .prices .sub-title {
   color: var(--transparent-sec-title-color);
 
@@ -298,8 +302,8 @@ img {
 }
 
 .price {
-  width: 585px;
   padding: 30px 40px;
+  flex-grow: 1;
 
   background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
 }
@@ -320,6 +324,11 @@ img {
   color: var(--sec-title-color);
 }
 
+.prices .button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 /* Блок преимущества-excellence */
 .excellence {
   padding-top: 114px;
@@ -430,6 +439,7 @@ img {
   margin-left: 30px;
 }
 
+/* footer */
 /* forma  */
 .forma .title {
   color: var(--white-color);
