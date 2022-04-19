@@ -329,14 +329,17 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
+
 /* Блок преимущества-excellence */
 .excellence {
   padding-top: 114px;
   padding-bottom: 137px;
 }
+
 .excellence-body {
   display: flex;
 }
+
 .excellence-list .list {
   display: flex;
   flex-wrap: wrap;
@@ -409,10 +412,13 @@ img {
 .masters .list .item + .item {
   margin-left: 30px;
 }
+
 .name {
   color: var(--primary-title-color);
   line-height: 1.39;
   text-align: center;
+
+  margin-bottom: 8px;
 }
 
 .position {
@@ -420,6 +426,21 @@ img {
   font-size: 14px;
   line-height: 1.36;
   text-align: center;
+
+  margin-bottom: 30px;
+}
+
+.soc-list {
+  justify-content: center;
+}
+
+.soc-list .link {
+  display: flex;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--white-color);
 }
 
 /* Блок с примерами работы */
