@@ -166,20 +166,17 @@ img {
   display: flex;
 }
 
-.hero .social {
+.hero-social {
   width: 98px;
 }
-.hero .social .item + .item {
+.hero-social .item + .item {
   margin-left: 40px;
 }
 
 .hero-text {
   padding: 272px 0 206px 96px;
 
-  background-image: radial-gradient(
-      rgba(25, 28, 38, 0.2),
-      rgba(25, 28, 38, 0.2)
-    ),
+  background-image: radial-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)),
     url('../images/hero.jpg');
   background-position: center;
   background-size: cover;
@@ -223,16 +220,16 @@ img {
 }
 
 /* Блок "О нас" */
-.about-body {
+.about .container {
   display: flex;
   padding-top: 139px;
   padding-bottom: 121px;
 }
 
-.about .list {
+.about-photo {
   display: flex;
 }
-.about .list .item + .item {
+.about-photo .item + .item {
   margin-left: 30px;
 }
 
@@ -271,16 +268,15 @@ img {
 }
 
 /* Блок Услуги и цены */
-.prices .container {
+.prices {
   border-color: #090b13;
-  background-image: url('../images/prices-bg.png'),
-    linear-gradient(#111319, #111319);
+  background-image: url('../images/prices-bg.png'), linear-gradient(#111319, #111319);
   background-position: center;
   background-size: cover;
   padding-top: 130px;
   padding-bottom: 130px;
-
   max-width: 1280px;
+  margin: 0 auto;
 }
 
 .prices .sub-title {
@@ -335,14 +331,16 @@ img {
   padding-top: 114px;
   padding-bottom: 137px;
 }
-
-.excellence-body {
+.excellence .container {
   display: flex;
 }
 
-.excellence-list .list {
+.excellence-list {
   display: flex;
   flex-wrap: wrap;
+
+  width: 50%;
+  padding-left: 100px;
 }
 
 .excellence-list .item {
@@ -378,6 +376,7 @@ img {
 .excellence-text {
   max-width: 500px;
 }
+
 .excellence-text .sub-title {
   color: var(--primary-title-color);
   text-transform: none;
@@ -394,6 +393,8 @@ img {
   padding-top: 130px;
   padding-bottom: 130px;
   background-color: var(--bcg-color);
+  max-width: 1280px;
+  margin: 0 auto;
 }
 
 .masters .sub-title {
@@ -412,7 +413,9 @@ img {
 .masters .list .item + .item {
   margin-left: 30px;
 }
-
+.master-photo {
+  margin-bottom: 30px;
+}
 .name {
   color: var(--primary-title-color);
   line-height: 1.39;
@@ -452,6 +455,19 @@ img {
   color: var(--primary-title-color);
   margin-bottom: 44px;
 }
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
 .photos .list {
   display: flex;
 }
@@ -466,8 +482,7 @@ img {
   padding-top: 130px;
   padding-bottom: 130px;
 
-  background-image: url(../images/contacts-bg.png),
-    linear-gradient(#191c26, #191c26);
+  background-image: url(../images/contacts-bg.png), linear-gradient(#191c26, #191c26);
   background-position: right, center;
   background-repeat: no-repeat;
   background-size: contain;
