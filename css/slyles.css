@@ -477,10 +477,16 @@ img {
 .soc-list .link {
   display: flex;
   justify-content: center;
+  align-items: center;
   width: 44px;
   height: 44px;
   border-radius: 50%;
   background-color: var(--white-color);
+  fill: var(--primary-title-color);
+}
+
+.soc-list .link:hover {
+  fill: var(--accent-color);
 }
 
 /* Блок с примерами работы */
@@ -553,12 +559,23 @@ img {
   margin-bottom: 70px;
 }
 
-.tel,
+.contacts .item {
+  display: flex;
+  align-items: center;
+}
+.contacts .item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.contacts .tel,
 .mail {
   color: var(--sec-title-color);
   text-decoration: none;
 }
-
+.contacts .icon {
+  fill: currentColor;
+  margin-right: 16px;
+}
 .contacts .title {
   color: var(--white-color);
   margin-bottom: 40px;
