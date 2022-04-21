@@ -57,11 +57,21 @@ img {
 
 /* Общий стиль для пред-заголовков */
 .sub-title {
+  display: flex;
+  align-items: center;
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
   letter-spacing: 0.1em;
   text-transform: uppercase;
+}
+
+.sub-title::before {
+  content: '';
+  height: 1px;
+  width: 60px;
+  background: currentColor;
+  margin-right: 20px;
 }
 
 /* общий стиль заголовков h2 */
@@ -210,20 +220,9 @@ img {
 }
 
 .hero .sub-title {
-  display: flex;
-  align-items: center;
   color: var(--transparent-sec-title-color);
 
   margin-bottom: 20px;
-}
-
-.hero .sub-title::before {
-  content: '';
-  display: inline-block;
-  height: 1px;
-  width: 60px;
-  background: var(--transparent-sec-title-color);
-  margin-right: 20px;
 }
 
 .hero-title {
@@ -260,19 +259,9 @@ img {
   margin-left: 64px;
 }
 .about .sub-title {
-  display: flex;
-  align-items: center;
   color: var(--primary-title-color);
 
   margin-bottom: 20px;
-}
-.about .sub-title::before {
-  content: '';
-  display: inline-block;
-  height: 1px;
-  width: 60px;
-  background: var(--primary-title-color);
-  margin-right: 20px;
 }
 
 .about .title {
@@ -313,21 +302,11 @@ img {
 }
 
 .prices .sub-title {
-  display: flex;
-  align-items: center;
   color: var(--transparent-sec-title-color);
 
   margin-bottom: 20px;
 }
 
-.prices .sub-title::before {
-  content: '';
-  display: inline-block;
-  height: 1px;
-  width: 60px;
-  background: var(--transparent-sec-title-color);
-  margin-right: 20px;
-}
 .prices .title {
   color: var(--white-color);
 
@@ -401,19 +380,33 @@ img {
   margin-left: 30px;
   margin-bottom: 30px;
 }
+
 .excellence-list .number {
+  display: flex;
+  justify-content: center;
   color: var(--primary-title-color);
   font-weight: 700;
   font-size: 42px;
   line-height: 1.36;
   letter-spacing: 0.05em;
-  display: block;
+
   margin-bottom: 6px;
+}
+.excellence-list .number::after {
+  content: '+';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+
+  color: var(--accent-color);
 }
 
 .excellence-list .sub-title {
   letter-spacing: normal;
   text-transform: none;
+}
+.excellence-list .sub-title::before {
+  content: none;
 }
 
 .excellence-text {
@@ -421,20 +414,9 @@ img {
 }
 
 .excellence-text .sub-title {
-  display: flex;
-  align-items: center;
   color: var(--primary-title-color);
 
   margin-bottom: 20px;
-}
-
-.excellence-text .sub-title::before {
-  content: '';
-  display: inline-block;
-  height: 1px;
-  width: 60px;
-  background: var(--primary-title-color);
-  margin-right: 20px;
 }
 
 .excellence-text .title {
@@ -452,18 +434,8 @@ img {
 }
 
 .masters .sub-title {
-  display: flex;
-  align-items: center;
   color: var(--primary-title-color);
   margin-bottom: 20px;
-}
-.masters .sub-title::before {
-  content: '';
-  display: inline-block;
-  height: 1px;
-  width: 60px;
-  background: var(--primary-title-color);
-  margin-right: 20px;
 }
 
 .masters .title {
@@ -517,18 +489,8 @@ img {
   padding-bottom: 130px;
 }
 .photos .sub-title {
-  display: flex;
-  align-items: center;
   color: var(--primary-title-color);
   margin-bottom: 44px;
-}
-.photos .sub-title::before {
-  content: '';
-  display: inline-block;
-  height: 1px;
-  width: 60px;
-  background: var(--primary-title-color);
-  margin-right: 20px;
 }
 
 .visually-hidden {
@@ -552,21 +514,26 @@ img {
   margin-left: 30px;
 }
 
-/* footer */
-.form-contact {
-  display: flex;
+/* form-contact */
+.form-contacts {
   padding-top: 130px;
   padding-bottom: 130px;
+  max-width: 1280px;
+  margin: 0 auto;
 
   background-image: url(../images/contacts-bg.png), linear-gradient(#191c26, #191c26);
   background-position: right, center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: calc(50% - 15px), auto;
+}
+
+.form-contacts .container {
+  display: flex;
 }
 
 /* form  */
 .form {
-  width: 50%;
+  flex-grow: 1;
 }
 
 .form .title {
@@ -575,7 +542,7 @@ img {
 
 /* contacts */
 .contacts {
-  width: 50%;
+  width: calc(50% - 15px);
 
   padding-left: 100px;
 }
@@ -597,9 +564,7 @@ img {
   margin-bottom: 40px;
 }
 
-.contacts > .sub-title {
-  display: flex;
-  align-items: center;
+.contacts .sub-title {
   color: var(--white-color);
   letter-spacing: 0.2em;
   text-transform: uppercase;
@@ -607,19 +572,11 @@ img {
   margin-bottom: 20px;
 }
 
-.contacts > .sub-title::before {
-  content: '';
-  display: inline-block;
-  height: 1px;
-  width: 60px;
-  background: var(--transparent-sec-title-color);
-  margin-right: 20px;
-}
-
 .contacts .text {
   color: var(--sec-title-color);
 }
 
+/* footer */
 .copyright {
   display: flex;
   padding: 55px;
