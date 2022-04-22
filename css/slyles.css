@@ -85,12 +85,19 @@ img {
 }
 
 /* header */
+.header {
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
 .header .container {
-  background-color: #555555;
   display: flex;
   align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
+
+  position: absolute;
+  top: 0;
 }
 
 .logo {
