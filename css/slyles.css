@@ -193,6 +193,8 @@ img {
   display: flex;
   align-items: center;
   width: 98px;
+
+  transform: rotate(-90deg);
 }
 
 .hero-social::before {
