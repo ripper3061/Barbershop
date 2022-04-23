@@ -354,13 +354,29 @@ img {
 .prices-lists .item {
   display: flex;
   justify-content: space-between;
+  align-items: baseline;
 }
 
 .prices-lists .item + .item {
   margin-top: 20px;
 }
+
 .prices-lists .text-item {
   color: var(--sec-title-color);
+}
+
+.prices-lists .text-item:last-child {
+  order: 1;
+}
+
+.prices-lists .item::after {
+  content: '';
+  width: 100px;
+  height: 1px;
+  background-color: rgba(157, 164, 189, 0.12);
+  flex-grow: 1;
+  margin-left: 6px;
+  margin-right: 6px;
 }
 
 .prices .button {
