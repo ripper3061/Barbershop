@@ -185,16 +185,21 @@ img {
   display: flex;
 }
 
-.hero .list {
-  display: flex;
+.rotate {
+  position: relative;
+  width: 98px;
 }
 
 .hero-social {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
   display: flex;
   align-items: center;
-  width: 98px;
+  margin-bottom: 40px;
 
-  transform: rotate(-90deg);
+  transform: rotate(-90deg) translate(0%, -50%);
+  transform-origin: top left;
 }
 
 .hero-social::before {
