@@ -17,6 +17,7 @@
   --accent-color: #ff6c00;
   --transparent-sec-title-color: rgba(157, 164, 189, 0.6);
   --bcg-color: #f7f7f7;
+  --animation-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body {
@@ -86,9 +87,11 @@ img {
 
 /* header */
 .header {
+  position: relative;
+  z-index: 1;
+
   width: 1200px;
   margin: 0 auto;
-  position: relative;
 }
 
 .header .container {
@@ -146,6 +149,8 @@ img {
   line-height: 1.33;
   letter-spacing: 0.1em;
   text-decoration: none;
+
+  transition: color 250ms var(--animation-function);
 }
 
 .nav-list .link:hover,
@@ -173,6 +178,8 @@ img {
   border: 1px solid var(--accent-color);
   box-sizing: border-box;
   border-radius: 25px;
+
+  transition: background-color 250ms var(--animation-function);
 }
 
 .button:hover,
@@ -232,6 +239,10 @@ img {
   font-size: 11px;
   line-height: 1.36;
   text-decoration: none;
+
+  padding: 20px 0px;
+
+  transition: color 250ms var(--animation-function);
 }
 
 .hero .link:hover,
@@ -302,6 +313,9 @@ img {
 
 .about .button {
   color: var(--primary-title-color);
+
+  transition: color 250ms var(--animation-function),
+    background-color 250ms var(--animation-function);
 }
 
 .about .button:hover,
@@ -519,9 +533,12 @@ img {
   border-radius: 50%;
   background-color: var(--white-color);
   fill: var(--primary-title-color);
+
+  transition: fill 250ms var(--animation-function);
 }
 
-.soc-list .link:hover {
+.soc-list .link:hover,
+.soc-list .link:focus {
   fill: var(--accent-color);
 }
 
@@ -669,4 +686,12 @@ img {
   font-size: 11px;
   line-height: 1.36;
   text-decoration: none;
+  padding: 20px 0px;
+
+  transition: color 250ms var(--animation-function);
+}
+
+.footer .link:hover,
+.footer .link:focus {
+  color: var(--accent-color);
 }
