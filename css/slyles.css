@@ -431,6 +431,15 @@ img {
   margin-bottom: 30px;
 }
 
+.excellence-list .item:nth-child(2n) {
+  position: relative;
+  top: 30px;
+}
+
+.excellence-list .item:nth-child(3) {
+  margin-left: 0;
+}
+
 .excellence-list .number {
   display: flex;
   justify-content: center;
@@ -442,6 +451,7 @@ img {
 
   margin-bottom: 6px;
 }
+
 .excellence-list .number::after {
   content: '+';
   font-style: normal;
@@ -449,6 +459,10 @@ img {
   font-size: 16px;
 
   color: var(--accent-color);
+
+  position: relative;
+  top: 8px;
+  right: 0;
 }
 
 .excellence-list .sub-title {
